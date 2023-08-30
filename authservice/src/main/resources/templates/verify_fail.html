@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>User Verification</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.col-3 {
+	flex-basis: 100%;
+	/* all col will occupy 30% */
+	min-width: 250px;
+	margin-bottom: 30px;
+	text-align: right;
+}
+
+/* features products */
+.small-container {
+	max-width: 1080px;
+	margin: auto;
+	/* for center */
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+/* testimonial */
+.testimonial {
+	padding-top: 100px;
+}
+
+.testimonial .col-3 {
+	text-align: center;
+	padding: 40px 20px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+	transition: transform 0.5s;
+}
+
+.search {
+	text-align: center;
+	padding: 40px 20px;
+	transition: transform 0.5s;
+}
+
+.testimonial .col-3:hover {
+	transform: translatey(-10px);
+}
+
+.testimonial .col-3 {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+
+@media only screen and (max-width:600px) {
+	.row {
+		text-align: center;
+	}
+	.col-3 {
+		flex-basis: 100%;
+	}
+}
+</style>
+</head>
+<body>
+	<div class="testimonial">
+		<div class="small-container">
+			<div class="search">
+				<h1>Sorry, we could not verify account. It maybe already
+					verified, or verification code is incorrect Register yourself
+					Again.</h1>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
